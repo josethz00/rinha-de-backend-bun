@@ -1,11 +1,11 @@
-CREATE TABLE users (
+CREATE UNLOGGED TABLE users (
     id SERIAL PRIMARY KEY,
     nome VARCHAR (256) NOT NULL,
     limite INTEGER NOT NULL,
     balance INTEGER DEFAULT 0
 );
 
-CREATE TABLE transactions (
+CREATE UNLOGGED TABLE transactions (
     id SERIAL PRIMARY KEY,
     value INTEGER NOT NULL,
     type CHAR(1) NOT NULL,
